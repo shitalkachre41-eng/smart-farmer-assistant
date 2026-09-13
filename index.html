@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Farmer Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Map -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+</head>
+
+<body>
+
+<header>
+    <h1>🌾 Smart Farmer Assistant</h1>
+    <p>Smart farming made simple</p>
+</header>
+
+<main>
+
+    <!-- FEATURES -->
+    <section class="features">
+
+        <!-- WEATHER -->
+        <div class="card">
+            <h2>🌤️ Weather</h2>
+            <p>Check weather information for farming.</p>
+
+            <button onclick="checkWeather()">
+                🌤️ Check Weather
+            </button>
+
+            <div id="weatherResult"></div>
+        </div>
+
+
+        <!-- MARKET -->
+        <div class="card">
+            <h2>🧅 Market Prices</h2>
+            <p>Check approximate crop market prices.</p>
+
+            <button onclick="checkPrice()">
+                🧅 Check Price
+            </button>
+
+            <div id="priceResult"></div>
+        </div>
+
+
+        <!-- RECOMMENDATION -->
+        <div class="card">
+            <h2>🤖 Smart Recommendation</h2>
+            <p>Get smart farming recommendations.</p>
+
+            <button onclick="getRecommendation()">
+                💡 Get Recommendation
+            </button>
+
+            <div id="recommendationResult"></div>
+        </div>
+
+    </section>
+
+
+    <!-- BUS MAP -->
+    <section class="map-section">
+
+        <h2>🚌 College Bus Tracking</h2>
+
+        <p>
+            Track the college bus route and current location.
+        </p>
+
+        <div id="map"></div>
+
+        <div class="bus-info">
+            🚌 <b>Bus Number:</b> BUS-01
+            <br>
+            📍 <b>Status:</b> On Route
+            <br>
+            ⏱️ <b>Estimated Arrival:</b> 10 minutes
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    🌱 Smart Farmer Assistant © 2026
+</footer>
+
+
+<!-- Leaflet Map -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f8f3;
+    color: #333;
+}
+
+
+/* HEADER */
+
+header {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+
+/* MAIN */
+
+main {
+    padding: 40px 20px;
+}
+
+
+/* CARDS */
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    min-height: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    color: #2e7d32;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+
+/* BUTTON */
+
+button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #388e3c;
+}
+
+
+/* RESULTS */
+
+#weatherResult,
+#priceResult,
+#recommendationResult {
+    margin-top: 20px;
+    font-weight: bold;
+    line-height: 1.7;
+}
+
+
+/* MAP */
+
+.map-section {
+    background: white;
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.map-section h2 {
+    color: #2e7d32;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+
+/* BUS INFO */
+
+.bus-info {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e8f5e9;
+    border-radius: 10px;
+    line-height: 1.8;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 20px;
+}
